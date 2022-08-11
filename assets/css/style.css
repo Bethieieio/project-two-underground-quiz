@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url("../images/main-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 15%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.5vw;
+    color: #FFFFFF;
+    text-shadow: 4px 4px #DE2110;
+    letter-spacing: -3px;
+    background-color:  rgb(0 9 171 / 63%);
+    padding: 1rem 4rem;
+}
+
+span {
+    font-size: 2rem;
+    color: white;
+}
+
+a { 
+    font-size: 2rem;
+    color: white;
+}
+
+.keep-track-area {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.game-area {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    height: 60%;
+ 
+}
+
+.submit-or-start-over{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    
+
+}
