@@ -56,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
         alert('Please select an answer')
         return
     }
+
+    nextQuestion()
+    
   });
   resetButton.addEventListener('click', function () {
       resetGame()
@@ -84,7 +87,10 @@ function resetGame() {
  * Sends player to the next question
  * inputs are emptied
  */
-function nextQuestion() {}
+function nextQuestion() {
+    currentQuestionIndex +=1
+    showQuestionByIndex(currentQuestionIndex)
+}
 /**
  * happens when submit button is clicked
  * Checks players answer
