@@ -97,7 +97,17 @@ function incrementScore() {}
  */
 function showResult() {}
 
+/**
+ * show question and answers by index
+ * get question object by index
+ * display questions and answers in HTML 
+ */
 function showQuestionByIndex(questionIndex) {
     let questionObject = questions[questionIndex]
     document.getElementById('question').innerText = questionObject.question
+
+    questionObject.answers.forEach(function (answer, index) {
+        document.getElementById(`answer-text-${index}`).innerText = answer
+    })
+
 }
