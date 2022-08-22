@@ -42,6 +42,7 @@ let score = 0
 
 document.addEventListener("DOMContentLoaded", function () {
   let form = document.getElementById("quiz");
+    const resetButton = document.getElementById('reset-button')
 
   // when answer is sent it runs this
   form.addEventListener("submit", function (event) {
@@ -50,7 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
     //selects answer player has selected
     let formData = new FormData(event.target);
     let selectedAnswer = formData.get("answer");
+
+    if (!selectedAnswer) {
+        alert('Please select an answer')
+        return
+    }
   });
+  resetButton.addEventListener('click', function () {
+      resetGame()
+  })
 });
 
 /**
@@ -68,7 +77,7 @@ function startGame() {}
 function resetGame() {
     currentQuestionIndex = 0
     score = 0
-
+    showQuestionByIndex(0)    
 }
 
 /**
