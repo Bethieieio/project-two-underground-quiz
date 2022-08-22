@@ -30,14 +30,21 @@ h1 {
     padding: 1rem 4rem;
 }
 
-span {
-    font-size: 2rem;
+a { 
+    font-size: 4rem;
     color: white;
+    list-style: none;
 }
 
-a { 
-    font-size: 3rem;
-    color: white;
+a:hover {
+    background-image: url(../images/hover.png);
+    background-size: cover;
+    color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
 }
 
 input {
@@ -55,18 +62,34 @@ input {
     width: 95%;
     height: 70%;
     box-sizing: border-box;
-    padding: 10%;
+    padding: 5%;
     line-height: 250%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
+    color: #000;
 }
 
 .submit-or-start-over{
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    margin-bottom: 0.5%;
-    
+    margin: 3%;
+
+}
+
+#reset-button {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    padding: 0 2% 0 2%;
+    background-color: rgb(0 9 171 / 63%);
+    text-shadow: 2px 2px #DE2110;
+    letter-spacing: -2px;
+}
+#reset-button:hover {
+    text-shadow: 4px 4px #0009AB;
+    background-color: rgb(222 33 16 / 63%);
+    cursor: pointer;
 
 }
 

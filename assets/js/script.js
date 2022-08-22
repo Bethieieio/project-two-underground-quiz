@@ -81,7 +81,8 @@ function startGame() {}
 function resetGame() {
     currentQuestionIndex = 0
     score = 0
-    showQuestionByIndex(0)    
+    showQuestionByIndex(0)   
+    document.getElementById('score').innerText = score 
 }
 
 /**
