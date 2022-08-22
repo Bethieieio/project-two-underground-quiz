@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return
     }
 
+    checkAnswer(selectedAnswer)
     nextQuestion()
     
   });
@@ -97,7 +98,16 @@ function nextQuestion() {
  * score +1 if question is answered correctly
  * shows correct answer if player's answer is incorrect
  */
-function checkAnswer() {}
+function checkAnswer(selectedAnswer) {
+    let questionObject = questions[currentQuestionIndex]
+
+
+    if (parseInt(selectedAnswer) === (questionObject.correctAnswer +1 )) {
+        score += 1
+
+        document.getElementById('score').innerText = score
+    }
+}
 
 /**
  * Adds one point to players current score on DOM
