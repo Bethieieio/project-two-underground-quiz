@@ -57,7 +57,7 @@ input {
    justify-content: space-around;
 }
 
-.game-area {
+#game-area {
     background-color: rgba(255, 255, 255, 0.5);
     width: 95%;
     height: 70%;
@@ -67,6 +67,10 @@ input {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     color: #000;
+}
+
+#game-area.hidden {
+    display: none;
 }
 
 .submit-or-start-over{
@@ -104,4 +108,17 @@ input {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+}
+
+#result-area {
+    background-color: rgb(222 33 16 / 63%);
+    width: 95%;
+    height: 70%;
+    display: none;
+
+}
+
+#result-area.active {
+    display: block;
+
 }

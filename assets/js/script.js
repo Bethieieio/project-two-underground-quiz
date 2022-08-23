@@ -58,6 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     checkAnswer(selectedAnswer)
+    if (currentQuestionIndex >= questions.length - 1) {
+        showResult()
+        return
+    } 
+
     nextQuestion()
     
   });
@@ -83,6 +88,9 @@ function resetGame() {
     score = 0
     showQuestionByIndex(0)   
     document.getElementById('score').innerText = score 
+
+    document.getElementById('result-area').classList.remove('active')
+    document.getElementById('game-area').classList.remove('hidden')
 }
 
 /**
@@ -121,7 +129,21 @@ function incrementScore() {}
  * congratulates player for doing well
  * commiserates player if they did not do well
  */
-function showResult() {}
+function showResult() {
+    let resultText
+    if (score < 6) {
+        resultText = "Oh Dear! Try again, you can do it!"
+    } else if (score < 12) {
+        resultText = "Good Effort! Can you beat your score?"
+    } else {
+        resultText = "EXCELLENT! you're an underground whiz!"
+    }
+
+    document.getElementById('result-text').innerText = resultText
+    document.getElementById('result-area').classList.add('active')
+    document.getElementById('game-area').classList.add('hidden')
+
+}
 
 /**
  * show question and answers by index
