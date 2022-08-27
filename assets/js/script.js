@@ -1,8 +1,6 @@
-//global variables
-//score
-//list of questions
-//answers
-//list of asked questions
+const startButton = document.getElementById('start-button')
+const gameArea = document.getElementById('game-area')
+const startArea = document.getElementById('start-area')
 
 let questions = [
     {
@@ -69,14 +67,23 @@ document.addEventListener("DOMContentLoaded", function () {
   resetButton.addEventListener('click', function () {
       resetGame()
   })
-});
+  startButton.addEventListener('click', function () {
+      startGame()
+  })
+})
 
 /**
  * start button is clicked
  * start button disapears
  * first question is displayed
  */
-function startGame() {}
+function startGame() {
+    startArea.classList.remove('active')
+    gameArea.classList.remove('hidden')
+    
+
+    resetGame()
+}
 
 /**
  * Sets game score to zero
