@@ -33,6 +33,38 @@ let questions = [
         ],
         correctAnswer: 1,
     },
+    {
+        question: "How many tube stations are there? 272 stations",
+        answers: [
+            "270",
+            "271",
+            "272",
+            "273",
+        ],
+        correctAnswer: 2,
+    },
+    {
+        question: "Which one of the following was never a station?",
+        answers: [
+            "British Museum",
+            "Lords",
+            "Tower of London",
+            "London Eye",
+        ],
+       correctAnswer: 3,
+    },
+    {
+        question: "Which one of the following was never a station?",
+        answers: [
+            "British Museum",
+            "Lords",
+            "Tower of London",
+            "London Eye",
+        ],
+       correctAnswer: 3,
+    }
+
+    
 ]
 let currentQuestionIndex = 0
 let score = 0

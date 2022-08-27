@@ -30,6 +30,12 @@ h1 {
     padding: 1rem 4rem;
 }
 
+#score {
+    color: #FFFFFF;
+    font-size: 10vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 #start-button {
     display: flex;
@@ -131,7 +137,6 @@ input {
 #submit-button img {
     width: 100%;
     cursor: pointer;
-
 }
 
 #quiz {
