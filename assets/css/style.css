@@ -46,7 +46,7 @@ h2 {
 
 a { 
     font-size: 4rem;
-    color: white;
+    color: #FFFFFF;
     list-style: none;
 }
 
@@ -141,6 +141,11 @@ input {
 }
 
 #result-area.active {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
 
 }

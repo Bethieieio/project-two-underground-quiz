@@ -60,8 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
         showResult()
         return
     } 
-
-    nextQuestion()
     
   });
   resetButton.addEventListener('click', function () {
@@ -80,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function startGame() {
     startArea.classList.remove('active')
     gameArea.classList.remove('hidden')
-    
+
 
     resetGame()
 }
@@ -122,7 +120,26 @@ function checkAnswer(selectedAnswer) {
         score += 1
 
         document.getElementById('score').innerText = score
+
+        Swal.fire({
+            title: 'Correct!',
+            icon: 'success',
+            showConfirmButton: false,
+            timer: 2000,
+            }).then(() => {
+            nextQuestion();
+            });
+    } else {
+         Swal.fire({
+            title: 'Incorrect!',
+            icon: 'error',
+            showConfirmButton: false,
+            timer: 2000,
+        }).then(() => {
+            nextQuestion();
+        });
     }
+
 }
 
 /**
