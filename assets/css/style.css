@@ -74,7 +74,7 @@ input {
     width: 95%;
     height: 70%;
     box-sizing: border-box;
-    padding: 5%;
+    padding: 4%;
     line-height: 250%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
@@ -86,7 +86,7 @@ input {
     font-size: 2.5vw;
     color: #0009AB;
     background-color:  rgba(255, 255, 255, 0.75);
-    padding: 5%;
+    padding: 1%;
     justify-content: center;
     width: 100%;
 }
@@ -101,10 +101,10 @@ input {
 
 .submit-or-start-over{
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin: 3%;
-
+    align-items: center;
+    justify-content: space-between;
+    margin: 1%;
+    width: 130%;
 }
 
 #reset-button {
@@ -128,6 +128,12 @@ input {
     border: none;
 }
 
+#submit-button img {
+    width: 100%;
+    cursor: pointer;
+
+}
+
 #quiz {
     flex-grow: 2;
     display: flex;
@@ -138,8 +144,9 @@ input {
 
 #result-area {
     background-color: rgb(222 33 16 / 63%);
-    width: 95%;
+    width: 100%;
     height: 70%;
+    padding: 5%;
     display: none;
 
 }
@@ -148,7 +155,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
 
