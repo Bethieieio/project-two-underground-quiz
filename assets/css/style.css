@@ -44,6 +44,8 @@ h1 {
     padding: 1%;
     justify-content: center;
     width: 75%;
+    display: flex;
+    text-align: center;
 }
 
 #start-area.active {
@@ -76,6 +78,7 @@ a:hover {
 
 li {
     list-style: none;
+    padding-left: 5%;
 }
 
 input {
@@ -97,6 +100,7 @@ input {
     font-size: 1.5em;
     color: #000;
     width: 80%;
+    
 }
 
 #game-area.hidden {
