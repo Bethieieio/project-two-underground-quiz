@@ -97,8 +97,8 @@ let questions = [
         question: "Which station is the only station to be named after a football club?",
         answers: [
             "Watford",
-            "Arsenal",
             "West Ham",
+            "Arsenal",
             "Tottenham Court Road",
         ],
         correctAnswer: 2,
@@ -111,8 +111,49 @@ let questions = [
         "Warick Avenue and Maida Vale",
         "Kilburn and West Hampstead",
         ],
-    }
-    
+        correctAnswer: 1,
+    },
+    {
+        question: "On the Victoria line, which is the only station that does not have an interchange?",
+        answers: [
+            "Seven Sisters",
+            "Warren Street",
+            "Vauxhall",
+            "Pimlico",
+        ],
+        correctAnswer: 3,
+    },
+    {
+        question: "Which station is the least used on the circle and Hammersmith and City lines?",
+        answers: [
+            "Westbourne Park",
+            "Royal Oak",
+            "Goldhawk Road",
+            "Wood Lane",
+        ],
+        correctAnswer:2,
+    },
+    {
+        question:"What is the average train speed, including stopping at stations?",
+        answers:
+        [
+            "20 mph",
+            "25 mph",
+            "30 mph",
+            "35 mph",
+        ],
+        correctAnswer: 0,
+    },
+    {
+        question: "Which station is the busiest with on average 100.3 million passengers per year?",
+        answers:
+        [
+            "Kings Cross St Pancreas",
+            "Waterloo",
+            "Marylebone",
+            "Bank",
+        ],
+    },
 ]
 let currentQuestionIndex = 0
 let score = 0
