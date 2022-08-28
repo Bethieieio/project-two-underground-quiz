@@ -34,7 +34,7 @@ let questions = [
         correctAnswer: 1,
     },
     {
-        question: "How many tube stations are there? 272 stations",
+        question: "How many tube stations are there?",
         answers: [
             "270",
             "271",
@@ -54,16 +54,64 @@ let questions = [
        correctAnswer: 3,
     },
     {
-        question: "Which one of the following was never a station?",
+        question: "Which is the least used station on the underground?",
         answers: [
-            "British Museum",
-            "Lords",
-            "Tower of London",
-            "London Eye",
+            "Mill Hill East",
+            "Roding Valley",
+            "Harlsden",
+            "Alperton",
         ],
-       correctAnswer: 3,
+        correctAnswer: 1,
+    },
+    {
+        question: "What train stock runs on the Waterloo and City and Central Lines?",
+        answers: [
+            "1995 stock",
+            "1996 stock",
+            "1992 stock",
+            "2009 stock",
+        ],
+        correctAnswer: 2,
+    },
+    {
+        question: "Which year was the Oyster card introduced?",
+        answers: [
+            "2003",
+            "2004",
+            "2004",
+            "2006",
+        ],
+        correctAnswer: 0,
+    },
+    {
+        question: "Which underground station would you travel to, to get to the London Stadium?",
+        answers: [
+            "East Ham",
+            "Upton Park",
+            "St James' Park",
+            "Stratford",
+        ],
+        correctAnswer: 3,
+    },
+    {
+        question: "Which station is the only station to be named after a football club?",
+        answers: [
+            "Watford",
+            "Arsenal",
+            "West Ham",
+            "Tottenham Court Road",
+        ],
+        correctAnswer: 2,
+    },
+    {
+        question:"Which stations are the shortest distance between any station at 260m?",
+        answers: [
+        "Theydon Bois and Debden",
+        "Leicester Square and Covent Garden",
+        "Warick Avenue and Maida Vale",
+        "Kilburn and West Hampstead",
+        ],
     }
-
     
 ]
 let currentQuestionIndex = 0
