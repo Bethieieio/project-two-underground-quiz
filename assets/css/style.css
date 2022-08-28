@@ -36,6 +36,19 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
+#start-area {
+    display: none;  font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vw;
+    color: #0009AB;
+    background-color:  rgba(255, 255, 255, 0.75);
+    padding: 1%;
+    justify-content: center;
+    width: 75%;
+}
+
+#start-area.active {
+    display: block;
+}
 
 #start-button {
     display: flex;
@@ -43,7 +56,7 @@ h1 {
 }
 
 #start-button img {
-    width: 40%;
+    width: 30%;
     cursor: pointer;
 
 }
@@ -77,28 +90,13 @@ input {
 
 #game-area {
     background-color: rgba(255, 255, 255, 0.75);
-    width: 95%;
-    height: 70%;
     box-sizing: border-box;
     padding: 4%;
     line-height: 250%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     color: #000;
-}
-
-#start-area {
-    display: none;  font-family: 'Open Sans', sans-serif;
-    font-size: 2.5vw;
-    color: #0009AB;
-    background-color:  rgba(255, 255, 255, 0.75);
-    padding: 1%;
-    justify-content: center;
-    width: 100%;
-}
-
-#start-area.active {
-    display: block;
+    width: 80%;
 }
 
 #game-area.hidden {
@@ -110,7 +108,7 @@ input {
     align-items: center;
     justify-content: space-between;
     margin: 1%;
-    width: 130%;
+    width: 100%;
 }
 
 #reset-button {
@@ -145,6 +143,7 @@ input {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    width: 95%;
 }
 
 #result-area {

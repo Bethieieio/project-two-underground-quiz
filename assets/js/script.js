@@ -153,6 +153,7 @@ let questions = [
             "Marylebone",
             "Bank",
         ],
+        correctAnswer: 1,
     },
 ]
 let currentQuestionIndex = 0
