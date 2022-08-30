@@ -1,6 +1,12 @@
 const startButton = document.getElementById('start-button')
 const gameArea = document.getElementById('game-area')
 const startArea = document.getElementById('start-area')
+const form = document.getElementById("quiz");
+const resetButton = document.getElementById('reset-button')
+const scoreElement = document.getElementById('score')
+const resultArea = document.getElementById('result-area')
+const resultTextElement = document.getElementById('result-text')
+const question = document.getElementById('question')
 
 let questions = [
     {
@@ -161,8 +167,6 @@ let score = 0
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  let form = document.getElementById("quiz");
-    const resetButton = document.getElementById('reset-button')
 
   // when answer is sent it runs this
   form.addEventListener("submit", function (event) {
@@ -214,10 +218,10 @@ function resetGame() {
     currentQuestionIndex = 0
     score = 0
     showQuestionByIndex(0)   
-    document.getElementById('score').innerText = score 
+    scoreElement.innerText = score 
 
-    document.getElementById('result-area').classList.remove('active')
-    document.getElementById('game-area').classList.remove('hidden')
+    resultArea.classList.remove('active')
+    gameArea.classList.remove('hidden')
 }
 
 /**
@@ -241,7 +245,7 @@ function checkAnswer(selectedAnswer) {
     if (parseInt(selectedAnswer) === (questionObject.correctAnswer +1 )) {
         score += 1
 
-        document.getElementById('score').innerText = score
+        scoreElement.innerText = score
 
         Swal.fire({
             title: 'Correct!',
@@ -285,9 +289,9 @@ function showResult() {
         resultText = "EXCELLENT! you're an underground whiz!"
     }
 
-    document.getElementById('result-text').innerText = resultText
-    document.getElementById('result-area').classList.add('active')
-    document.getElementById('game-area').classList.add('hidden')
+    resultTextElement.innerText = resultText
+    resultArea.classList.add('active')
+    gameArea.classList.add('hidden')
 
 }
 
@@ -298,7 +302,7 @@ function showResult() {
  */
 function showQuestionByIndex(questionIndex) {
     let questionObject = questions[questionIndex]
-    document.getElementById('question').innerText = questionObject.question
+    question.innerText = questionObject.question
 
     questionObject.answers.forEach(function (answer, index) {
         document.getElementById(`answer-text-${index}`).innerText = answer
