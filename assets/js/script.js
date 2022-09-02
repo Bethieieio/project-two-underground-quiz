@@ -185,6 +185,7 @@ function checkAnswer(selectedAnswer) {
       icon: "success",
       showConfirmButton: false,
       timer: 2000,
+      heightAuto: false,
     }).then(() => {
       nextQuestion();
     });
@@ -194,6 +195,7 @@ function checkAnswer(selectedAnswer) {
       icon: "error",
       showConfirmButton: false,
       timer: 2000,
+      heightAuto: false,
     }).then(() => {
       nextQuestion();
     });
