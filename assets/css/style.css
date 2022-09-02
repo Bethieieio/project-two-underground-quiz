@@ -23,7 +23,7 @@ img {
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 4.5vw;
-    color: #FFFFFF;
+    color: hsl(0, 0%, 100%);
     text-shadow: 4px 4px #DE2110;
     letter-spacing: -3px;
     background-color:  rgb(0 9 171 / 63%);
@@ -34,6 +34,48 @@ h1 {
     color: #FFFFFF;
     font-size: 10vw;
     font-family: 'Open Sans', sans-serif;
+}
+
+.underground-circle {
+    border: 2rem solid red;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+    position: relative;
+}
+
+.underground-bar {
+    background: blue;
+    width: 170%;
+    height: 3rem;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    left: -30%;
+
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 0.1rem;
+    font-size: 2rem;
+}
+.floating-question-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question-number{
+    font-size: 20rem;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: -50px;
+    text-indent: -50px;
 }
 
 #start-area {

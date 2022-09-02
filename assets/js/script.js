@@ -7,6 +7,7 @@ const scoreElement = document.getElementById('score')
 const resultArea = document.getElementById('result-area')
 const resultTextElement = document.getElementById('result-text')
 const question = document.getElementById('question')
+const currentQuestionNumber = document.getElementById('question-number')
 
 let questions = [
     {
@@ -269,11 +270,6 @@ function checkAnswer(selectedAnswer) {
 }
 
 /**
- * Adds one point to players current score on DOM
- */
-function incrementScore() {}
-
-/**
  * as soon as last question is answered
  * ends the game
  * congratulates player for doing well
@@ -303,6 +299,8 @@ function showResult() {
 function showQuestionByIndex(questionIndex) {
     let questionObject = questions[questionIndex]
     question.innerText = questionObject.question
+
+    currentQuestionNumber.innerText = questionIndex + 1
 
     questionObject.answers.forEach(function (answer, index) {
         document.getElementById(`answer-text-${index}`).innerText = answer
