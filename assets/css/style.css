@@ -30,27 +30,22 @@ h1 {
     padding: 1rem 4rem;
 }
 
-#score {
-    color: #FFFFFF;
-    font-size: 10vw;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .underground-circle {
-    border: 2rem solid red;
+    border: 2rem solid #DE2110;
     width: 9rem;
     height: 9rem;
     border-radius: 100%;
     position: relative;
+    margin: 0 2rem;
 }
 
 .underground-bar {
-    background: blue;
+    background: #0009AB;
     width: 170%;
     height: 3rem;
     position: absolute;
     top: calc(50% - 1.5rem);
-    left: -30%;
+    left: -35%;
 
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -70,7 +65,7 @@ h1 {
     align-items: center;
 }
 
-#question-number{
+#question-number, #score {
     font-size: 20rem;
     text-align: center;
     color: rgba(255,255,255,0.8);
