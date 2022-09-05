@@ -130,9 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /**
- * start button is clicked
- * start button disapears
- * first question is displayed
+ * start game
  */
 function startGame() {
   startArea.classList.remove("active");
@@ -143,8 +141,6 @@ function startGame() {
 
 /**
  * Sets game score to zero
- * Sets game to question one
- * displays first question
  */
 function resetGame() {
   currentQuestionIndex = 0;
@@ -160,7 +156,6 @@ function resetGame() {
 
 /**
  * Sends player to the next question
- * inputs are emptied
  */
 function nextQuestion() {
   currentQuestionIndex += 1;
@@ -170,10 +165,8 @@ function nextQuestion() {
   form.reset();
 }
 /**
- * happens when submit button is clicked
- * Checks players answer
- * score +1 if question is answered correctly
- * shows correct answer if player's answer is incorrect
+ * check players answer 
+ * @param selectedAnswer: The answer that the user selected to be checked if correct
  */
 function checkAnswer(selectedAnswer) {
   let questionObject = questions[currentQuestionIndex];
@@ -206,10 +199,7 @@ function checkAnswer(selectedAnswer) {
 }
 
 /**
- * as soon as last question is answered
- * ends the game
- * congratulates player for doing well
- * commiserates player if they did not do well
+ * ends game and shows players score
  */
 function showResult() {
   let resultText;
@@ -230,8 +220,8 @@ function showResult() {
 
 /**
  * show question and answers by index
- * get question object by index
- * display questions and answers in HTML
+ * 
+ * @param questionIndex: index of the question array to be shown
  */
 function showQuestionByIndex(questionIndex) {
   let questionObject = questions[questionIndex];
