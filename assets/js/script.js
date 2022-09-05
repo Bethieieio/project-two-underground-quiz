@@ -1,13 +1,14 @@
-const startButton = document.getElementById("start-button");
-const gameArea = document.getElementById("game-area");
-const startArea = document.getElementById("start-area");
 const form = document.getElementById("quiz");
-const resetButton = document.getElementById("reset-button");
-const scoreElement = document.getElementById("score");
-const resultArea = document.getElementById("result-area");
-const resultTextElement = document.getElementById("result-text");
 const question = document.getElementById("question");
+const gameArea = document.getElementById("game-area");
+const scoreElement = document.getElementById("score");
+const startArea = document.getElementById("start-area");
+const resultArea = document.getElementById("result-area");
+const startButton = document.getElementById("start-button");
+const resetButton = document.getElementById("reset-button");
+const resultTextElement = document.getElementById("result-text");
 const currentQuestionNumber = document.getElementById("question-number");
+const submitButton = document.getElementById("submit-button");
 
 let questions = [
   {
@@ -104,11 +105,8 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
-  // when answer is sent it runs this
   form.addEventListener("submit", function (event) {
-    // prevents page from refreshing, when submit button is clicked.
     event.preventDefault();
-    //selects answer player has selected
     let formData = new FormData(event.target);
     let selectedAnswer = formData.get("answer");
 
@@ -156,6 +154,8 @@ function resetGame() {
 
   resultArea.classList.remove("active");
   gameArea.classList.remove("hidden");
+
+  submitButton.classList.remove("hidden")
 }
 
 /**
@@ -185,7 +185,7 @@ function checkAnswer(selectedAnswer) {
       icon: "success",
       showConfirmButton: false,
       timer: 2000,
-      heightAuto: false,
+      
     }).then(() => {
       nextQuestion();
     });
@@ -195,7 +195,7 @@ function checkAnswer(selectedAnswer) {
       icon: "error",
       showConfirmButton: false,
       timer: 2000,
-      heightAuto: false,
+      
     }).then(() => {
       nextQuestion();
     });
@@ -221,6 +221,8 @@ function showResult() {
   resultTextElement.innerText = resultText;
   resultArea.classList.add("active");
   gameArea.classList.add("hidden");
+
+  submitButton.classList.add("hidden")
 }
 
 /**
