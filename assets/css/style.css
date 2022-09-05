@@ -1,3 +1,4 @@
+/* global */
 html {
   height: 100%;
 }
@@ -30,78 +31,6 @@ h1 {
   padding: 1rem 4rem;
 }
 
-.underground-circle {
-  border: 2em solid #de2110;
-  width: 9em;
-  height: 9em;
-  border-radius: 100%;
-  position: relative;
-  margin: 1em 2em;
-
-}
-
-.underground-bar {
-  background: #0009ab;
-  width: 170%;
-  height: 3em;
-  position: absolute;
-  top: calc(50% - 1.5em);
-  left: -35%;
-
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  padding: 0.1em;
-}
-
-.floating-question-number {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#question-number,
-#score {
-  font-size: 20em;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.8);
-  letter-spacing: -50px;
-  text-indent: -50px;
-}
-
-#start-area {
-  display: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5vw;
-  color: #0009ab;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 1%;
-  justify-content: center;
-  width: 75%;
-  text-align: center;
-}
-
-#start-area.active {
-  display: block;
-}
-
-#start-button {
-  display: flex;
-  justify-content: center;
-}
-
-#start-button img {
-  width: 30%;
-  cursor: pointer;
-}
-
 a {
   font-size: 4rem;
   color: #ffffff;
@@ -124,24 +53,59 @@ input {
   transform: scale(2);
 }
 
+/* roundals */
+
+.underground-circle {
+  border: 2em solid #de2110;
+  width: 9em;
+  height: 9em;
+  border-radius: 100%;
+  position: relative;
+  margin: 1em 2em;
+}
+
+.underground-bar {
+  background: #0009ab;
+  width: 170%;
+  height: 3em;
+  position: absolute;
+  top: calc(50% - 1.5em);
+  left: -35%;
+
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 0.1em;
+}
+
+/* Section areas */
+
+.floating-question-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#question-number,
+#score {
+  font-size: 20em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: -50px;
+  text-indent: -50px;
+}
+
 .keep-track-area {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-#game-area {
-  background-color: rgba(255, 255, 255, 0.75);
-  box-sizing: border-box;
-  padding: 4%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.5em;
-  color: #000;
-  width: 80%;
-}
-
-#game-area.hidden {
-  display: none;
 }
 
 .submit-or-start-over {
@@ -152,6 +116,43 @@ input {
   align-self: flex-end;
   margin: 1%;
   width: 100%;
+}
+
+#quiz {
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+
+/* 
+    Button styling
+*/
+
+#submit-button {
+  background: none;
+  border: none;
+}
+
+#submit-button.hidden {
+  display: none;
+}
+
+#submit-button img {
+  width: 100%;
+  cursor: pointer;
+}
+
+#start-button {
+  display: flex;
+  justify-content: center;
+}
+
+#start-button img {
+  width: 30%;
+  cursor: pointer;
 }
 
 #reset-button {
@@ -169,29 +170,7 @@ input {
   cursor: pointer;
 }
 
-#submit-button {
-  background: none;
-  border: none;
-}
-
-#submit-button.hidden {
-    display: none;
-}
-
-#submit-button img {
-  width: 100%;
-  cursor: pointer;
-}
-
-#quiz {
-  flex-grow: 2;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  width: 95%;
-}
-
+/* Main card areas and actions */
 #result-area {
   background-color: rgb(222 33 16 / 63%);
   width: 100%;
@@ -209,12 +188,43 @@ input {
   font-family: "Open Sans", sans-serif;
 }
 
-@media only screen and (max-width: 800px) {
-    #title {
-        display: none;
-    }
+#game-area {
+  background-color: rgba(255, 255, 255, 0.75);
+  box-sizing: border-box;
+  padding: 4%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  color: #000;
+  width: 80%;
+}
 
-    .underground-circle {
-        font-size: 10px;
-    }
+#game-area.hidden {
+  display: none;
+}
+
+#start-area {
+  display: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5vw;
+  color: #0009ab;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1%;
+  justify-content: center;
+  width: 75%;
+  text-align: center;
+}
+
+#start-area.active {
+  display: block;
+}
+
+/* media queries */
+@media only screen and (max-width: 800px) {
+  #title {
+    display: none;
+  }
+
+  .underground-circle {
+    font-size: 10px;
+  }
 }
