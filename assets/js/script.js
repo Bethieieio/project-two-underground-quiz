@@ -11,89 +11,89 @@ const currentQuestionNumber = document.getElementById("question-number");
 const submitButton = document.getElementById("submit-button");
 
 let questions = [
-  {
-    question:
-      "Out of these tube lines, which one is has all its stations underground?",
-    answers: ["Hammersmith and City", "Picadilly", "Victoria", "Central"],
-    correctAnswer: 2,
-  },
-  {
-    question: "Which station has the most car parking spaces at 599 spaces?",
-    answers: ["Epping", "Cockfosters", "Windledon", "Amersham"],
-    correctAnswer: 0,
-  },
-  {
-    question: "Which station is the deepest below ground level 55.8 metres?",
-    answers: ["Angel", "Hampstead", "Elephant and Castle", "Black Horse Road"],
-    correctAnswer: 1,
-  },
-  {
-    question: "How many tube stations are there?",
-    answers: ["270", "271", "272", "273"],
-    correctAnswer: 2,
-  },
-  {
-    question: "Which one of the following was never a station?",
-    answers: ["British Museum", "Lords", "Tower of London", "London Eye"],
-    correctAnswer: 3,
-  },
-  {
-    question: "Which is the least used station on the underground?",
-    answers: ["Mill Hill East", "Roding Valley", "Harlsden", "Alperton"],
-    correctAnswer: 1,
-  },
-  {
-    question:
-      "What train stock runs on the Waterloo and City and Central Lines?",
-    answers: ["1995 stock", "1996 stock", "1992 stock", "2009 stock"],
-    correctAnswer: 2,
-  },
-  {
-    question: "Which year was the Oyster card introduced?",
-    answers: ["2003", "2004", "2004", "2006"],
-    correctAnswer: 0,
-  },
-  {
-    question:
-      "Which underground station would you travel to, to get to the London Stadium?",
-    answers: ["East Ham", "Upton Park", "St James' Park", "Stratford"],
-    correctAnswer: 3,
-  },
-  {
-    question:
-      "Which station is the only station to be named after a football club?",
-    answers: ["Watford", "West Ham", "Arsenal", "Tottenham Court Road"],
-    correctAnswer: 2,
-  },
-  {
-    question:
-      "Which stations are the shortest distance between any station at 260m?",
-    answers: [
-      "Theydon Bois and Debden",
-      "Leicester Square and Covent Garden",
-      "Warick Avenue and Maida Vale",
-      "Kilburn and West Hampstead",
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question:
-      "On the Victoria line, which is the only station that does not have an interchange?",
-    answers: ["Seven Sisters", "Warren Street", "Vauxhall", "Pimlico"],
-    correctAnswer: 3,
-  },
-  {
-    question:
-      "Which station is the least used on the circle and Hammersmith and City lines?",
-    answers: ["Westbourne Park", "Royal Oak", "Goldhawk Road", "Wood Lane"],
-    correctAnswer: 2,
-  },
-  {
-    question:
-      "What is the average train speed, including stopping at stations?",
-    answers: ["20 mph", "25 mph", "30 mph", "35 mph"],
-    correctAnswer: 0,
-  },
+//   {
+//     question:
+//       "Out of these tube lines, which one is has all its stations underground?",
+//     answers: ["Hammersmith and City", "Picadilly", "Victoria", "Central"],
+//     correctAnswer: 2,
+//   },
+//   {
+//     question: "Which station has the most car parking spaces at 599 spaces?",
+//     answers: ["Epping", "Cockfosters", "Windledon", "Amersham"],
+//     correctAnswer: 0,
+//   },
+//   {
+//     question: "Which station is the deepest below ground level 55.8 metres?",
+//     answers: ["Angel", "Hampstead", "Elephant and Castle", "Black Horse Road"],
+//     correctAnswer: 1,
+//   },
+//   {
+//     question: "How many tube stations are there?",
+//     answers: ["270", "271", "272", "273"],
+//     correctAnswer: 2,
+//   },
+//   {
+//     question: "Which one of the following was never a station?",
+//     answers: ["British Museum", "Lords", "Tower of London", "London Eye"],
+//     correctAnswer: 3,
+//   },
+//   {
+//     question: "Which is the least used station on the underground?",
+//     answers: ["Mill Hill East", "Roding Valley", "Harlsden", "Alperton"],
+//     correctAnswer: 1,
+//   },
+//   {
+//     question:
+//       "What train stock runs on the Waterloo and City and Central Lines?",
+//     answers: ["1995 stock", "1996 stock", "1992 stock", "2009 stock"],
+//     correctAnswer: 2,
+//   },
+//   {
+//     question: "Which year was the Oyster card introduced?",
+//     answers: ["2003", "2004", "2004", "2006"],
+//     correctAnswer: 0,
+//   },
+//   {
+//     question:
+//       "Which underground station would you travel to, to get to the London Stadium?",
+//     answers: ["East Ham", "Upton Park", "St James' Park", "Stratford"],
+//     correctAnswer: 3,
+//   },
+//   {
+//     question:
+//       "Which station is the only station to be named after a football club?",
+//     answers: ["Watford", "West Ham", "Arsenal", "Tottenham Court Road"],
+//     correctAnswer: 2,
+//   },
+//   {
+//     question:
+//       "Which stations are the shortest distance between any station at 260m?",
+//     answers: [
+//       "Theydon Bois and Debden",
+//       "Leicester Square and Covent Garden",
+//       "Warick Avenue and Maida Vale",
+//       "Kilburn and West Hampstead",
+//     ],
+//     correctAnswer: 1,
+//   },
+//   {
+//     question:
+//       "On the Victoria line, which is the only station that does not have an interchange?",
+//     answers: ["Seven Sisters", "Warren Street", "Vauxhall", "Pimlico"],
+//     correctAnswer: 3,
+//   },
+//   {
+//     question:
+//       "Which station is the least used on the circle and Hammersmith and City lines?",
+//     answers: ["Westbourne Park", "Royal Oak", "Goldhawk Road", "Wood Lane"],
+//     correctAnswer: 2,
+//   },
+//   {
+//     question:
+//       "What is the average train speed, including stopping at stations?",
+//     answers: ["20 mph", "25 mph", "30 mph", "35 mph"],
+//     correctAnswer: 0,
+//   },
   {
     question:
       "Which station is the busiest with on average 100.3 million passengers per year?",
