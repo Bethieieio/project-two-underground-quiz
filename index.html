@@ -44,62 +44,65 @@
 
     <!--middle-->
     <form id="quiz">
-    <div class="game-area-outer">
-      <div id="start-area" class="active">
-        <h2>Welcome to the Underground Quiz</h2>
-        <div id="start-button">
-          <img
-            src="./assets/images/start.png"
-            alt="start button"
-            aria-label="start the quiz"
-          />
+      <div class="game-area-outer">
+        <div id="start-area" class="active">
+          <h2>Welcome to the Underground Quiz</h2>
+          <div id="start-button">
+            <img
+              src="./assets/images/start.png"
+              alt="start button"
+              aria-label="start the quiz"
+            />
+          </div>
+        </div>
+
+        <div id="game-area" class="hidden">
+          <h3 id="question">question here</h3>
+          <div>
+            <label>
+              <input name="answer" type="radio" value="1" />
+
+              <span id="answer-text-0"></span>
+            </label>
+          </div>
+          <div>
+            <label>
+              <input name="answer" type="radio" value="2" />
+              <span id="answer-text-1"></span>
+            </label>
+          </div>
+          <div>
+            <label>
+              <input name="answer" type="radio" value="3" />
+              <span id="answer-text-2"></span>
+            </label>
+          </div>
+          <div>
+            <label>
+              <input name="answer" type="radio" value="4" />
+              <span id="answer-text-3"></span>
+            </label>
+          </div>
+        </div>
+
+        <div id="result-area">
+          <div id="result-text"></div>
         </div>
       </div>
-
-      <div id="game-area" class="hidden">
-        <h3 id="question"></h3>
-        <div>
-          <label>
-            <input name="answer" type="radio" value="1" />
-
-            <span id="answer-text-0"></span>
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="answer" type="radio" value="2" />
-            <span id="answer-text-1"></span>
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="answer" type="radio" value="3" />
-            <span id="answer-text-2"></span>
-          </label>
-        </div>
-        <div>
-          <label>
-            <input name="answer" type="radio" value="4" />
-            <span id="answer-text-3"></span>
-          </label>
-        </div>
-      </div>
-
-      <div id="result-area">
-        <div id="result-text"></div>
-      </div>
-    </div>
 
       <!--bottom-->
       <div class="submit-or-start-over">
-        <div id="reset-button" aria-label="Restart the quiz">Reset</div>
+        <div id="reset-button">Reset</div>
 
-        <button id="submit-button" aria-label="Submit your answer" class="hidden">
+        <button
+          id="submit-button"
+          aria-label="Submit your answer"
+          class="hidden"
+        >
           <img src="./assets/images/submit.png" alt="submit button" />
         </button>
-
-        <li>
-          <ol>
+        <ol>
+          <li>
             <a
               href="https://github.com/Bethieieio"
               target="_blank"
@@ -108,8 +111,8 @@
             >
               <i class="fab fa-github"></i>
             </a>
-          </ol>
-        </li>
+          </li>
+        </ol>
       </div>
     </form>
 
