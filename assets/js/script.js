@@ -164,6 +164,7 @@ function resetGame() {
  */
 function nextQuestion() {
   currentQuestionIndex += 1;
+  if (currentQuestionIndex !== questions.length)
   showQuestionByIndex(currentQuestionIndex);
 }
 /**
