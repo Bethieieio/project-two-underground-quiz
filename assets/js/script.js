@@ -6,9 +6,9 @@ const startArea = document.getElementById("start-area");
 const resultArea = document.getElementById("result-area");
 const startButton = document.getElementById("start-button");
 const resetButton = document.getElementById("reset-button");
+const submitButton = document.getElementById("submit-button");
 const resultTextElement = document.getElementById("result-text");
 const currentQuestionNumber = document.getElementById("question-number");
-const submitButton = document.getElementById("submit-button");
 
 let questions = [
 //   {
@@ -88,12 +88,12 @@ let questions = [
 //     answers: ["Westbourne Park", "Royal Oak", "Goldhawk Road", "Wood Lane"],
 //     correctAnswer: 2,
 //   },
-//   {
-//     question:
-//       "What is the average train speed, including stopping at stations?",
-//     answers: ["20 mph", "25 mph", "30 mph", "35 mph"],
-//     correctAnswer: 0,
-//   },
+  {
+    question:
+      "What is the average train speed, including stopping at stations?",
+    answers: ["20 mph", "25 mph", "30 mph", "35 mph"],
+    correctAnswer: 0,
+  },
   {
     question:
       "Which station is the busiest with on average 100.3 million passengers per year?",
@@ -166,6 +166,8 @@ function nextQuestion() {
   currentQuestionIndex += 1;
   if (currentQuestionIndex !== questions.length)
   showQuestionByIndex(currentQuestionIndex);
+
+  form.reset();
 }
 /**
  * happens when submit button is clicked
