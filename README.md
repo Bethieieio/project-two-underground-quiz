@@ -44,6 +44,7 @@ At the end it shows them a message, depending on how well they do.
 - The h1 is in the chosen font of "Open Sans" in white, with a vermillion red shadow. This makes it stand out from the rest of the text. The letter spacing has been set to -3, to push the letters together. The background is my chosen blue that is slightly transparent so the background can be seen behind it.
 - The reset button is located in the bottom left corner of the page. It has the exact same colour scheme as the h1. When the game is in process or finished, the player can choose to press the reset to start again if they want to improve their score. When the button is hovered over, the background and shadow colors swap around.
 - In the bottom right of the screen is a logo link to my GitHub page that opens in another tab. It is white, so it stands out aganist the background.
+- There is a favicon icon in the tab, that is a TFL logo.
 
 ### Start Page
 - The start page is the first page the user will see when visiting the site.
@@ -64,5 +65,68 @@ At the end it shows them a message, depending on how well they do.
 ![image](assets/images/incorrect-answer-popup.png)
 ![image](assets/images/answer-question-popup.png)
 
+### End Results Page
+- When the user has finished the quiz, the game will take them to the results page. The score will still be shown in the top right and the game area will turn a transparent vermillion red, that has a message inside it, in white "Open Sans" font.
+- The message will be different, depending on the score the user got. If the user got between 0-5, the game will tell the user to try again while giving them encouragement. If the user got 6-11, the game will congratulate and ask the player if they can beat there score. If the player got a score of 12-15, the game will tell them it's highest praise, calling them an Underground Whiz!
+- If the player would like to start again, the reset button will take them back to the beginning.
+- Please note that the submit button is not on the screen.
+![image](assets/images/oh-dear-page.png)
+![image](assets/images/good-effort-page.png)
+![image](assets/images/excellent-score-page.png)
+
+## Future Enhancements
+- I would create more quizes with TFL themes like the London Overground, the DLR and the ELizabeth Line.
+- I would like to add a main menu with all the quiz subjects in one place.
+- A feedback page would be useful to see peoples comments and to find out if people are learning from them.
+
+## Testing
+### Lighhouse
+- I used [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en), the Google chrome tool to test the pages. The results are below.
+![image](assets/images/lighthouse-testing.png)
+
+### W3C HTML Validator
+- I used [W3C's](https://validator.w3.org/) HTML validator to test the HTML on the website.
+- On the first test I got the following errors.
+- I had an empty h3 - so I added text.
+- I had an unecessary aria-label - so I removed it.
+- I had my <li> outside the <ol> instead of the other way round. - So I swapped them round.
+![image](assets/images/html-validator-before.png)
+- After fixing the errors, I had none.
+![image](assets/images/html-validator-after.png)
+
+### W3C CSS Validator
+I used [W3C](https://jigsaw.w3.org/css-validator/) again, this time for its CSS validator. After only testing it once, I found that there were no errors in the pages CSS.
+![image](assets/images/css-validator.png)
+
+### JSHint JavaScript Validator
+- I used [JSHint](https://jshint.com/) to check my JS code. 
+![image](assets/images/js-validtor-one.png)
+![image](assets/images/js-validator-two.png)
+
+### Manual Testing 
+- I tested the website on Chrome, Safari and Edge.
+- The website loaded at a suitable rate, the background image and roundals loaded appeared at the same time.
+- The questions loaded and clicking the answers involved no lag.
+- The counters counted at a decent rate.
+
+### Testing on a Mobile Phone
+- I manually tested the quiz on my I-Phone 12.
+- The quiz moved smoothly and all the pop ups worked.
+- Everything was visable and the necessary media queries worked.
+- The main h1 heading is not visable as it would cause the quiz to scroll left/right to navigate the quiz, as seen in the media query CSS.
+![image](assets/images/mobile-test.png)
+
+## Bugs
+-Issue: Quiz was able to be scolled left to right on a smaller than standard screen.
+-Cause: The h1 heading.
+-Resolution: Removed the h1 reading for smaller screens via media query.
+
+-Issue: The reset, submit and GitHub buttons were bouncing on the screen as soon as submit was clicked.
+-Cause: The sweet alert pop up.
+-Resolution: Set the popup auto height to false.
+
+- Issue: When reset button is clicked at the start screen, it starts the game while the start button is still on screen.
+- Cause: Reset button being on screen with the start button.
+- Resolution: Remove the reset button on the start screen.
 
 
