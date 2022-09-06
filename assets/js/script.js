@@ -50,7 +50,7 @@ let questions = [
   },
   {
     question: "Which year was the Oyster card introduced?",
-    answers: ["2003", "2004", "2004", "2006"],
+    answers: ["2003", "2004", "2005", "2006"],
     correctAnswer: 0,
   },
   {
