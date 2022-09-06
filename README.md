@@ -39,3 +39,13 @@ At the end it shows them a message, depending on how well they do.
 - It is easy to read, simple and does not take any attention away from the quiz.
 - The back up font I used just in case the users browers cannot use "Open Sans" is Sans Serif.
 
+## Page Content
+### General Layout
+- The h1 is in the chosen font of "Open Sans" in white, with a vermillion red shadow. This makes it stand out from the rest of the text. The letter spacing as been set to -3, to push the letters together. The background the blue that is slightly transparent so the background can be seen behind it.
+- The reset button is located in the bottom left corner of the page. It has the exact same colour scheme as the h1. When the game is in process or finished, the player can choose to press the reset to start again if they want to improve their score. When the button is hovered over, the background and shadow colors swap around.
+- In the bottom left of the screen is a logo link to my GitHub page in another tab. It is white, so it stands out aganist the background.
+### Start Page
+- The start page is the first page the user will see when visiting the site.
+- In the centre, there is a transparent white background. It is transparent so the background can still be seen behind it. Inside it is text that welcomes the user. Underneath is an image of a TFL roundal that says START. Clicking on this starts the game, by sending the user to the first question.
+
+
