@@ -41,11 +41,28 @@ At the end it shows them a message, depending on how well they do.
 
 ## Page Content
 ### General Layout
-- The h1 is in the chosen font of "Open Sans" in white, with a vermillion red shadow. This makes it stand out from the rest of the text. The letter spacing as been set to -3, to push the letters together. The background the blue that is slightly transparent so the background can be seen behind it.
+- The h1 is in the chosen font of "Open Sans" in white, with a vermillion red shadow. This makes it stand out from the rest of the text. The letter spacing has been set to -3, to push the letters together. The background is my chosen blue that is slightly transparent so the background can be seen behind it.
 - The reset button is located in the bottom left corner of the page. It has the exact same colour scheme as the h1. When the game is in process or finished, the player can choose to press the reset to start again if they want to improve their score. When the button is hovered over, the background and shadow colors swap around.
-- In the bottom left of the screen is a logo link to my GitHub page in another tab. It is white, so it stands out aganist the background.
+- In the bottom right of the screen is a logo link to my GitHub page that opens in another tab. It is white, so it stands out aganist the background.
+
 ### Start Page
 - The start page is the first page the user will see when visiting the site.
 - In the centre, there is a transparent white background. It is transparent so the background can still be seen behind it. Inside it is text that welcomes the user. Underneath is an image of a TFL roundal that says START. Clicking on this starts the game, by sending the user to the first question.
+![image](assets/images/start-page.png)
+
+### The Quiz
+- The text in the white game area is in black for readability with the "Open Sans" font.
+- As soon as the user hits the start button, the white game area widens and the first question appears. There are 15 question and each question has a choice of 4 possible answers. To choose their answer, the user will then click one of the possible answers that then fills in its corrisponding radio button.
+- Just below the white game area is a submit button that is in a shape of a TFL roundal. When the user has decided on their answer, they will then click on the submit button. This will then tell them if they got the answer correct and take them to the next question.
+- There is a pop up that tells the user if the answer they have chosen is correct or incorrect. This is shown on the screen for 2 seconds before going onto the next question.
+- If the player tries to press submit without selecting an answer, a pop up tells the user to select an answer.
+- Located at the top left of the screen we have the question counter. It is a TFL roundal with QUESTION inside it. When the game starts, a large 1 in a transparent white will appear over the top of the roundal. When a new question is shown, the number is added by 1.
+- On the upper right hand side of the page is the score counter. Every time the user gets a questio correct, the score is added by one. If the user gets it wrong, the score stays the same. The score roundal appears the exact same as the question roundal, but has SCORE in its text.
+![image](assets/images/start-page.png)
+![image](assets/images/quiz-page.png)
+![image](assets/images/correct-answer-popup.png)
+![image](assets/images/incorrect-answer-popup.png)
+![image](assets/images/answer-question-popup.png)
+
 
 
