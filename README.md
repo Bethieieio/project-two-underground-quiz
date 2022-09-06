@@ -129,4 +129,15 @@ I used [W3C](https://jigsaw.w3.org/css-validator/) again, this time for its CSS 
 - Cause: Reset button being on screen with the start button.
 - Resolution: Remove the reset button on the start screen.
 
+## Deployment
+I deployed my site my doing the following:-
+- Going into my repositopry on Gtihub.
+- Clicking the repository's settings.
+- On the left hand side, there is a menu item called 'Pages'
+- I made sure the Branch was on 'Main'
+- I gave the title project-two-underground-quiz and clicked 'Save'
+- I clicked the link to make sure it worked.
+- I then copied the link and added it to the about section in my repository.
+- You can find the live site here. https://bethieieio.github.io/project-two-underground-quiz/
+
 
