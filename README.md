@@ -149,5 +149,24 @@ I used [W3C](https://jigsaw.w3.org/css-validator/) again, this time for its CSS 
 - [Google Fonts](https://fonts.google.com/) - for the font.
 - [GitHub](https://github.com) - for keeping my work safe and deploying it.
 - [Optimizilla](https://imagecompressor.com/) - to shrink the background image so it would load at a suitable speed.
-- [SweetAlert2](https://sweetalert2.github.io/#download) - the code for the correct/incorrect answer pop ups.
+- [Sweet Alert2](https://sweetalert2.github.io/#download) - the code for the correct/incorrect answer pop ups.
+- [Favicon](https://favicon.io/) - to change an image to a tab image.
 
+## Credits
+- [w3schools](https://www.w3schools.com/html/html_favicon.asp) - refreshing my memory to how to add the favicon.
+- [w3schools](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) - again to indent text for the roundal numbers so they lined up centeral.
+- [StackOverflow](https://stackoverflow.com/questions/47935078/sweetalert2-set-dialog-height) - the bug there the bottom icons kept jumping, I added heightAuto: false to the Sweet Alert code to stop this.
+- [developer.mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) - I had to refresh my memory on how to add letter spacing.
+- [developer.mozilla](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects#retrieving_a_formdata_object_from_an_html_form) - In order to get the value of the selected answer from the form, I used the FormData class to obtain the value I needed. I passed the form element into the FormData class and used the get function with my targeted input being answer. This gave me the currently selected radio button and it's corresponding value of 1 to 4 that I could use to check if the answer was correct.
+There's also a possibility that the answer input value would be undefined so I added a condition to check for this
+
+## Honourable Mentions
+- My partner [Ashleigh](https://github.com/bashleigh) - she helped me a lot with the Javascript and any questions that I needed asking, if I could not find the answer on Google, she would answer the question in terms I would understand and remember, writing examples for me along the way too. She also helped me use CSS to create the score and question number roundals. She also created the start and submit roundal buttons.
+- My mentor Rich, for the calls and giving me the encouragement I needed to get this project done and for not making me feel like a sheep in wolves clothing so much.
+
+## Content 
+- I used the code from the [Love Running Project](https://bethieieio.github.io/love-running/) for the GitHub link.
+
+## Media
+- For the start and submit buttons, as already stated, they were produced by my parter.
+- I got the background image from [Pexels](https://www.pexels.com/photo/train-moving-in-an-underground-train-station-1814397/).
