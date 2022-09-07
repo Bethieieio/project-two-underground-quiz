@@ -1,4 +1,4 @@
-const form = docment.getElementById('quiz')
+const form = document.getElementById('quiz');
 const question = document.getElementById("question");
 const gameArea = document.getElementById("game-area");
 const scoreElement = document.getElementById("score");
