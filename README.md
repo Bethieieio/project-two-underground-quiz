@@ -117,20 +117,20 @@ I used [W3C](https://jigsaw.w3.org/css-validator/) again, this time for its CSS 
 ![image](assets/images/mobile-test.png)
 
 ## Bugs
--Issue: Quiz was able to be scolled left to right on a smaller than standard screen.
--Cause: The h1 heading.
--Resolution: Removed the h1 reading for smaller screens via media query.
+- Issue: Quiz was able to be scolled left to right on a smaller than standard screen.
+- Cause: The h1 heading.
+- Resolution: Removed the h1 reading for smaller screens via media query.
 
--Issue: The reset, submit and GitHub buttons were bouncing on the screen as soon as submit was clicked.
--Cause: The sweet alert pop up.
--Resolution: Set the popup auto height to false.
+- Issue: The reset, submit and GitHub buttons were bouncing on the screen as soon as submit was clicked.
+- Cause: The sweet alert pop up.
+- Resolution: Set the popup auto height to false.
 
 - Issue: When reset button is clicked at the start screen, it starts the game while the start button is still on screen.
 - Cause: Reset button being on screen with the start button.
 - Resolution: Remove the reset button on the start screen.
 
 ## Deployment
-I deployed my site my doing the following:-
+- I deployed my site my doing the following:-
 - Going into my repositopry on Gtihub.
 - Clicking the repository's settings.
 - On the left hand side, there is a menu item called 'Pages'
@@ -140,4 +140,14 @@ I deployed my site my doing the following:-
 - I then copied the link and added it to the about section in my repository.
 - You can find the live site here. https://bethieieio.github.io/project-two-underground-quiz/
 
+ ## Technology
+ - I used the folowing techology in this project:
+- HTML5
+- CSS3
+- JavaScript
+- [Font Awesome](https://fontawesome.com/) - for the GitHub link
+- [Google Fonts](https://fonts.google.com/) - for the font.
+- [GitHub](https://github.com) - for keeping my work safe and deploying it.
+- [Optimizilla](https://imagecompressor.com/) - to shrink the background image so it would load at a suitable speed.
+- [SweetAlert2](https://sweetalert2.github.io/#download) - the code for the correct/incorrect answer pop ups.
 

@@ -1,4 +1,3 @@
-const form = document.getElementById("quiz");
 const question = document.getElementById("question");
 const gameArea = document.getElementById("game-area");
 const scoreElement = document.getElementById("score");
@@ -151,7 +150,7 @@ function resetGame() {
   resultArea.classList.remove("active");
   gameArea.classList.remove("hidden");
 
-  submitButton.classList.remove("hidden")
+  submitButton.classList.remove("hidden");
 }
 
 /**
@@ -215,7 +214,7 @@ function showResult() {
   resultArea.classList.add("active");
   gameArea.classList.add("hidden");
 
-  submitButton.classList.add("hidden")
+  submitButton.classList.add("hidden");
 }
 
 /**
