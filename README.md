@@ -100,8 +100,7 @@ I used [W3C](https://jigsaw.w3.org/css-validator/) again, this time for its CSS 
 
 ### JSHint JavaScript Validator
 - I used [JSHint](https://jshint.com/) to check my JS code. 
-![image](assets/images/js-validtor-one.png)
-![image](assets/images/js-validator-two.png)
+![image](assets/images/js-validator.png)
 
 ### Manual Testing 
 - I tested the website on Chrome, Safari and Edge.
@@ -131,7 +130,7 @@ I used [W3C](https://jigsaw.w3.org/css-validator/) again, this time for its CSS 
 
 ## Deployment
 - I deployed my site my doing the following:-
-- Going into my repositopry on Gtihub.
+- Going into my repositopry on Github.
 - Clicking the repository's settings.
 - On the left hand side, there is a menu item called 'Pages'
 - I made sure the Branch was on 'Main'
