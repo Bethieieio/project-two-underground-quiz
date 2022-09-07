@@ -134,7 +134,6 @@ document.addEventListener("DOMContentLoaded", function () {
  */
 function startGame() {
   startArea.classList.remove("active");
-  gameArea.classList.remove("hidden");
 
   resetGame();
 }
@@ -152,6 +151,7 @@ function resetGame() {
   gameArea.classList.remove("hidden");
 
   submitButton.classList.remove("hidden");
+  resetButton.classList.remove("hidden");
 }
 
 /**

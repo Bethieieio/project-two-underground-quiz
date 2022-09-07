@@ -100,6 +100,8 @@ I used [W3C](https://jigsaw.w3.org/css-validator/) again, this time for its CSS 
 
 ### JSHint JavaScript Validator
 - I used [JSHint](https://jshint.com/) to check my JS code. 
+- The only concerns were adding a couple semi colons.
+- The swal appears undifined, but it is defined in the CDN link, which JSHint does not read.
 ![image](assets/images/js-validator.png)
 
 ### Manual Testing 

@@ -203,6 +203,10 @@ input {
   display: none;
 }
 
+#reset-button.hidden {
+  display: none;
+}
+
 .game-area-outer {
   display: flex;
   flex-grow: 2;
